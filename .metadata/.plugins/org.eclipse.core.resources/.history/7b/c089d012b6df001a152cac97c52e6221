@@ -1,0 +1,16 @@
+
+public class Humain {
+	public String getChat()
+	{return nomDuChat;}
+	int taille, anniversaire;
+	String nomDuChat, village;
+	public Humain(int pTaille, String pChat, String pVillage, int pNaissance)
+	{
+	taille = pTaille;
+	anniversaire = pNaissance;
+	nomDuChat = pChat;
+	village = pVillage;
+	
+	}
+
+}

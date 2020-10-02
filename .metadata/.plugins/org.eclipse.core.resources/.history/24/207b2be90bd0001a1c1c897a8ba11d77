@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+public class main {
+
+	public static void main(String[] args) {
+Scanner sc = new Scanner(System.in);
+int lignes, etoiles, etoilesTemp, espaces, espacesTemp, max, maxfin;
+System.out.println("Combien de ligne doit faire le sapin? ");
+lignes = sc.nextInt();
+max = (lignes * 2) - 1;
+System.out.println(max);
+maxfin = 0;
+espaces = (lignes - 1);
+etoiles = 1;
+etoilesTemp = etoiles;
+do {
+for(espacesTemp = espaces; espacesTemp > 0; espacesTemp--)
+	{
+	System.out.print(" ");}
+for(etoilesTemp = etoiles; etoilesTemp > 0; etoilesTemp--)
+	{
+	if (espacesTemp > 1)
+	System.out.print("*");
+	else
+	System.out.println("*");
+	}
+etoilesTemp = etoiles;
+espacesTemp = espaces;
+etoilesTemp--;
+etoiles = etoilesTemp;
+espacesTemp = espacesTemp + 2;
+etoilesTemp = etoiles;
+maxfin++;
+}while(max == maxfin);
+	}
+
+}

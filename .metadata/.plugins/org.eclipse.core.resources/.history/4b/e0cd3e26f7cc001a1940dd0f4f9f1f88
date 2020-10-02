@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+System.out.println("On boirait bien un truc non??");
+Scanner o = new Scanner(System.in);
+String reponse = o.nextLine();
+if (o = "oui")
+System.out.println("Ah ben mets 2 picons ! ");
+else
+for (int a = 0; a < 3; a = a++)
+{System.out.println("T'en sur ?")
+		
+}
+	}
+
+}

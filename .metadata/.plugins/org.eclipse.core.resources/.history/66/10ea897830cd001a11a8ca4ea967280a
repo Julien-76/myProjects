@@ -1,0 +1,24 @@
+import java.io.IOException;
+import java.util.Scanner;
+
+public class main {
+
+	public static void main(String[] args) throws IOException {
+		float a;
+		a = (float)Math.random();
+		a = a * 30;
+		int b = (int) a;
+		b = 1 + b;
+		int c;
+Scanner sc = new Scanner(System.in);
+System.out.println("J'ai choisi un nombre entre 1 et 30. Trouve le !");
+c = sc.nextInt();
+do {
+if (b == c)
+	System.out.print("GAGNEEEEEE");
+else
+	System.out.println("LOOOOOOOSER !!!");
+	System.out.println("Try again !");
+}while(b == c);
+	}
+}

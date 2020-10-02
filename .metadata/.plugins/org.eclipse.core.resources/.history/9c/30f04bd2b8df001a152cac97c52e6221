@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Humain {
+	Scanner test = new Scanner(System.in);
+	public String getChat()
+	{return nomDuChat;}
+	public int getAnniversaire()
+	{return anniversaire;}
+	int taille, anniversaire;
+	String nomDuChat, village;
+	public Humain(int pTaille, String pChat, String pVillage, int pNaissance)
+	{
+	taille = pTaille;
+	anniversaire = pNaissance;
+	nomDuChat = pChat;
+	village = pVillage;
+	System.out.println("Nous somme maintenant dans la classe Humain");
+String teste = test.nextLine();
+System.out.println("teste");
+	}
+
+}

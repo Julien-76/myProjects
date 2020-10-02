@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class main {
+
+	public static void main(String[] args) {
+		String a;
+		a = "HGFUEHUIE";
+Scanner caractere = new Scanner(System.in);
+while (a != "orval")
+	{
+	System.out.println("Quelle est ma bière préférée ??");
+	a = caractere.nextLine();
+	if (a == "orval")
+	System.out.println("Bien joué !");
+	else
+	System.out.println("Perdu !! Je te repose la question");
+	}
+	}
+}
+
+

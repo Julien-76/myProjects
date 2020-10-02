@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class main {
+
+	public static void main(String[] args) {
+		int nombres = 0;
+		int curNbre = 0;
+		int max = 0;
+		int min = 0;
+		int tete = 0;
+		int pied = 0;
+System.out.println("Entre des nombres, je te dirai la taille de la plus grande chaine croissante et décroissante, pour terminer, tape 100");
+Scanner sc = new Scanner(System.in);		
+curNbre = sc.nextInt();
+int cptMax = 1;
+while (curNbre != 100)
+{		if (curNbre > nombres)
+				max = max++;
+			else
+				max = 0;
+			if (max > tete)
+				tete = max;
+			if (curNbre < nombres)
+				min = min++;
+			else
+				min = 0;
+			if (max > tete)
+				pied = max;
+nombres = curNbre;
+curNbre = sc.nextInt();
+}
+System.out.println("Voici la taille de la plus grande chaine croissante : " + tete);
+System.out.println("Voici la taille de la plus grande chaine décroissante : " + pied);
+	}
+
+}

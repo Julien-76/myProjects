@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class main {
+
+	public static void main(String[] args) {
+			// TODO Auto-generated method stub
+		
+		// TODO Auto-generated method stub
+		char a;
+Scanner caractere = new Scanner(System.in);
+do
+	{
+	System.out.println("Tape un caractère, et j'espère que ça ne sera pas un g...");
+	a = caractere.nextLine().charAt(0);
+	if (a == 'g')
+	System.out.println("Perduuuuuuu LOOOOOOSEEEEEEEEEEER");
+	}while (a != 'g');
+		
+	}
+}
+

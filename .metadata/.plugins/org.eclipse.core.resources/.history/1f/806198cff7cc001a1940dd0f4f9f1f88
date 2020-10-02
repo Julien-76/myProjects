@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+System.out.println("On boirait bien un truc non?? O/N");
+Scanner o = new Scanner(System.in);
+char reponse = o.nextLine().charAt(0);
+System.out.println(reponse);
+
+
+	}
+
+}

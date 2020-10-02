@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class main {
+
+	public static void main(String[] args) {
+		int nombres = 0;
+		int max = 0;
+		int min =0;
+		int cpt = 1;
+		System.out.println("Tape des nombres, je te dirai quel est le plus grand et le plus petit. Pour terminer, tape 100");
+		Scanner sc = new Scanner(System.in);
+		nombres = sc.nextInt();
+		max = nombres;
+		min = nombres;
+		int cptMax = 1;
+		int cptMin = 1;
+		while (nombres != 100)
+	{
+			if (nombres < min)
+				{
+				min = nombres;
+				cptMin = cpt;
+				}
+			if (nombres > max)
+			{
+				max = nombres;
+				cptMax = cpt;
+			}
+			cpt = cpt + 1;
+		nombres = sc.nextInt();
+	}
+System.out.println("Voici le plus grand nombre de la série : " +  max + "c'était en position " + cptMax);
+System.out.println("Voici le plus petit nombre de la série : " + min + "c'était en position " + cptMin);
+	}
+
+}

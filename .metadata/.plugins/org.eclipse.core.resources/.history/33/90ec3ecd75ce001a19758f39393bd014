@@ -1,0 +1,37 @@
+import java.util.Scanner;
+public class main {
+
+	public static void main(String[] args) {
+		// declarations
+		Scanner sc = new Scanner(System.in);
+		int conv, erreur;
+		float temp, tempConv;
+		char choix;
+		// TODO Auto-generated method stub
+		erreur = 1;
+while (erreur == 1)
+{
+System.out.println("Choississez le mode de conversion :");
+System.out.println("1 - Conversion Celcius -> Fahrenheit");
+System.out.println("2 - Conversion Fahrenheit -> Celcius");
+	conv = sc.nextInt();	
+System.out.println("Quelle est la température à convertir ?");
+	temp = sc.nextFloat();
+if (conv == 1)
+	{tempConv = ((9 / 5) * temp ) + 32 ;
+	erreur = 0;}
+	else
+		if (conv == 2)
+			{tempConv = ((temp - 32) * 5) / 2;
+			erreur = 0;}
+		else
+			System.out.println("Choix incorrect");}
+if (conv == 1)
+	System.out.println(temp + "° Celcius = " + tempConv + "° Fahrenheit");
+	else
+		System.out.println(temp + "° Farenheit = " + tempConv + "° Celcius");
+		
+		
+	}
+
+}
